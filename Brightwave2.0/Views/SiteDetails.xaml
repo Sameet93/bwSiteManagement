@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="Brightwave2.Views.SiteDetails">
+    <ContentPage.Content>
+        
+        <StackLayout x:Name="MasterLayout">
+                <StackLayout x:Name = "LogoStack" VerticalOptions="FillAndExpand">
+                          <Image x:Name = "LoginIcon" Source="LoginIcon.png" Margin="0,80,0,0"/> 
+                </StackLayout>
+        </StackLayout>
+       <StackLayout>
+            <Label x:Name="installerNameLabel" Text = "Installer"/>
+            <Label x:Name="siteNameLabel" Text = "Site"/>
+            <Label x:Name="coordinatesLabel" Text="Coordinates"/>
+            <Label x:Name="DevicesLabel" Text="Devices"/>
+            <Label x:Name="doiLabel" Text = "Date of Install"/>
+            <Editor x:Name="Comment" />
+            <Editor/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

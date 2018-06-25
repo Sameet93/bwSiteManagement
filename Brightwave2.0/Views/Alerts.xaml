@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="Brightwave2.Views.Alerts"
+             Title="Alerts">
+    <ContentPage.Content>
+        <ScrollView Orientation="Horizontal">
+        <StackLayout>
+                <StackLayout x:Name="MasterLayout">
+                     <StackLayout x:Name = "LogoStack" VerticalOptions="FillAndExpand">
+                          <Image x:Name = "LoginIcon" Source="LoginIcon.png" Margin="0,80,0,0"/> 
+                </StackLayout>
+        </StackLayout>
+       
+        <StackLayout x:Name="TableStack" VerticalOptions="FillAndExpand">
+                <ListView x:Name="listview" SeparatorVisibility="Default">
+                    <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <Grid >
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto"/>
+                                        </Grid.ColumnDefinitions>
+                                           <Label Grid.Column="1" Text="{Binding Site}" TextColor="Orange" FontSize="Medium" HorizontalOptions="FillAndExpand"/>
+                                           <Label Grid.Column="2" Text="{Binding Coordinates}" TextColor="Orange" FontSize="Medium" HorizontalOptions="StartAndExpand"/>
+                                           <Label Grid.Column="3" Text="{Binding Type}" TextColor="Orange" FontSize="Medium" HorizontalOptions="StartAndExpand"/>
+                                           <Label Grid.Column="3" Text="{Binding Status}" TextColor="Orange" FontSize="Medium" HorizontalOptions="EndAndExpand"/>
+                                    </Grid>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>            
+                    </ListView>
+             </StackLayout>
+         </StackLayout>
+       </ScrollView>    
+    </ContentPage.Content>
+</ContentPage>

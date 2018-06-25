@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="Brightwave2.Views.ReplacePage"
+             Title="Replace">
+        
+        <ContentPage.Content>
+
+        <StackLayout x:Name="MasterLayout">
+        <StackLayout x:Name = "LogoStack" VerticalOptions="FillAndExpand">
+            <Image x:Name = "LoginIcon" Source="LoginIcon.png" Margin="0,80,0,0"/>
+            
+        </StackLayout>
+        <StackLayout x:Name = "FieldsStack" VerticalOptions="StartAndExpand">
+            <StackLayout.Padding>             
+
+            </StackLayout.Padding>
+            <ActivityIndicator x:Name = "ActivitySpinner" Color="Gray" IsRunning="true"/>
+            <Label x:Name = "serialLabel" Text = "Old Serial Number" Margin ="50,10,50,0" />
+            <Entry x:Name = "serialText" Placeholder="Old Serial Number" Margin ="50,0,50,0"/>
+            <Label x:Name = "newSerialLabel" Text="New Serial Number" Margin ="50,10,50,0"/>
+            <Entry x:Name = "newSerialText" Placeholder="New Serial Number" Margin ="50,0,50,0"/>    
+            <Label x:Name = "coordinatesLabel" Text="New Coordinates" Margin ="50,10,50,0"/>
+            <Entry x:Name = "coordinatesText" Placeholder="Coordinates" Margin ="50,0,50,0"/>    
+            <Button x:Name = "submitButton" Text="Submit" Clicked="SubmitProcedure" Margin ="100,40,100,0" BackgroundColor="Orange"/>
+
+        </StackLayout>
+         </StackLayout>
+   
+        </ContentPage.Content>
+
+</ContentPage>

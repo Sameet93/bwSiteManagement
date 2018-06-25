@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="Brightwave2.Views.Report"
+             Title="Report">
+    <ContentPage.ToolbarItems>
+        
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+    <StackLayout x:Name="MasterStack">
+        <StackLayout>
+             <StackLayout x:Name = "LogoStack1" VerticalOptions="FillAndExpand">
+             <Image x:Name = "LoginIcon1" Source="LoginIcon.png" Margin="0,80,0,0"/>  
+             </StackLayout>
+        </StackLayout>
+        <StackLayout VerticalOptions="FillAndExpand">
+            <Label Text="Hello World"/>
+            <Button x:Name = "saveButton" Text="Save" Margin ="100,40,100,0" BackgroundColor="Orange"/>
+        </StackLayout>
+     </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

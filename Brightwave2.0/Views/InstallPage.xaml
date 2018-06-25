@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="Brightwave2.Views.InstallPage"
+    Title="New Install">
+   
+	<StackLayout x:Name = "MasterLayout2" >
+        <StackLayout>
+            <StackLayout x:Name = "LogoStack1" VerticalOptions="FillAndExpand">
+            <Image x:Name = "LoginIcon1" Source="LoginIcon.png" Margin="0,80,0,0"/>           
+        </StackLayout>
+            
+        <StackLayout x:Name = "installFormLayout" VerticalOptions="StartAndExpand">
+            <StackLayout.Padding>             
+          
+            </StackLayout.Padding>
+            <Label Text="Model"  Margin ="50,0,50,0"/>
+            <Picker Title="Pick a Model" Margin="50,0,50,0">
+                    <Picker.Items>
+                    <x:String>Ubiquiti</x:String>
+                    <x:String>ZTE</x:String>
+                    </Picker.Items>
+            </Picker>
+            <Label Text="Serial Number"  Margin ="50,10,50,0"/>
+            <Entry x:Name = "serialText" Placeholder="Serial Number"  Margin ="50,0,50,0"/>
+            <Label Text="Coordinates"  Margin ="50,10,50,0"/>
+            <Entry x:Name = "coordinatesText" Placeholder="Coordinates"  Margin ="50,0,50,0"/>
+            <Label Text="Physical Address"  Margin ="50,10,50,0"/>
+            <Editor x:Name = "addressText"  Text="e.g. 1 Main Road, Bryanston, Sandton, Gauteng"  Margin ="50,0,50,0"/>
+        </StackLayout>
+            
+        </StackLayout>
+    </StackLayout>  
+</ContentPage>
